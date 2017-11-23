@@ -22,6 +22,17 @@ public class Cliente {
     private int telefono;
     private Date fechanacimiento;
 
+    public Cliente(int idCliente, int documento, String tipoDocumento, String nombre, String apellido, String direccion, int telefono, Date fechanacimiento) {
+        this.idCliente = idCliente;
+        this.documento = documento;
+        this.tipoDocumento = tipoDocumento;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.fechanacimiento = fechanacimiento;
+    }
+
     public int getIdCliente() {
         return idCliente;
     }
@@ -90,7 +101,5 @@ public class Cliente {
     public String toString() {
         return "Cliente{" + "idCliente=" + idCliente + ", documento=" + documento + ", tipoDocumento=" + tipoDocumento + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion + ", telefono=" + telefono + ", fechanacimiento=" + fechanacimiento + '}';
     }
-    
-    
     
 }

@@ -20,6 +20,17 @@ public class Vehiculo {
    private int Poliza_idPoliza;
    private int RegistroSiniestro_idRegistroSiniestro;
 
+    public Vehiculo(int idVehiculo, String matricula, String cilindraje, String marca, String color, int Cliente_idCliente, int Poliza_idPoliza, int RegistroSiniestro_idRegistroSiniestro) {
+        this.idVehiculo = idVehiculo;
+        this.matricula = matricula;
+        this.cilindraje = cilindraje;
+        this.marca = marca;
+        this.color = color;
+        this.Cliente_idCliente = Cliente_idCliente;
+        this.Poliza_idPoliza = Poliza_idPoliza;
+        this.RegistroSiniestro_idRegistroSiniestro = RegistroSiniestro_idRegistroSiniestro;
+    }
+
     public int getIdVehiculo() {
         return idVehiculo;
     }
